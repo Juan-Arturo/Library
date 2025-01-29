@@ -17,7 +17,8 @@ final class LibraryController extends AbstractController
 {
 
     #[Route('/books/list', name: 'library_list')]
-    public function list(Request $request, BookRepository $BookRepository): JsonResponse
+    public function list(Request $request, BookRepository $BookRepository
+    ): JsonResponse
     {
        // $title = $request->get('title', 'titulo de respaldo');
        // $logger->info('List action called 2 ');
